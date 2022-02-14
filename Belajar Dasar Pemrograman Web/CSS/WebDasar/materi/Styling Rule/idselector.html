@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Judul Dokumen</title>
+    <style>
+      #special {
+        background-color: skyblue;
+      }
+
+      /* <a> element yang menerapkan href attribut */
+      a[href] {
+        color: blue;
+      }
+
+      /* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+      a[href^="#"] {
+        background-color: gold;
+      }
+
+      /* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+      a[href*="example"] {
+        background-color: silver;
+      }
+
+      /* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+      a[href*="insensitive" i] {
+        color: cyan;
+      }
+
+      /* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+      a[href$=".org"] {
+        color: red;
+      }
+
+      /* Attr global */
+      /* Menargetkan seluruh tipe elemen */
+      * {
+        color: green;
+      }
+      /* Menargetkan seluruh tipe elemen yang mengandung nilai "en" pada atribut lang */
+
+      *[lang^="en"] {
+        font-style: italic;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang memiliki nilai "warning" pada atribut class */
+      *.warning {
+        color: red;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang memiliki nilai "content" pada atribut id */
+      *#content {
+        border: 1px solid blue;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="special">
+      <p>Ini merupakan konten di dalam sebuah div yang diberi id special.</p>
+    </div>
+    <h1>Selector id bersifat unique sehingga contoh disalah adalah salah karena diatas sudah menggunakan id yang sama</h1>
+    <div id="special">
+      <p>Ini merupakan konten di dalam sebuah div biasa.</p>
+    </div>
+
+    <h1>Selector Atributte</h1>
+    <ul>
+      <ul>
+        <li><a href="#internal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="http://example.org">Example org link</a></li>
+      </ul>
+    </ul>
+
+    <h1>Atribute Global</h1>
+    <p>Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka teks pada paragraf ini akan berwarna hijau</p>
+    <p lang="en-us">This is an English paragraph contains en-us value of lang attribute, so this text will be green and italic.</p>
+
+    <h1>Ini merupakan sebuah header biasa</h1>
+    <h1 lang="en-us">This is an English Header</h1>
+
+    <p class="warning">Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki kelas bernilai warning, sehingga teks dari paragraf ini akan berwarna merah</p>
+
+    <div id="content">
+      <p>Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai "content", seharusnya paragraf ini dibungkus dalam border yang memiliki padding 20px</p>
+    </div>
+  </body>
+</html>
