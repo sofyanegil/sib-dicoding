@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+/* Header */
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.navbar {
+  height: 13vh;
+  width: 100%;
+  background-color: #6d0f0f;
+  padding: 25px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  position: relative;
+}
+
+.navbar img {
+  width: 10vw;
+}
+
+.navbar ul.menu {
+  display: flex;
+  position: absolute;
+  right: 0;
+  /* margin: 10px auto; */
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.navbar ul.menu li:hover a.link {
+  border-bottom: 4px solid white;
+  padding-bottom: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar a span {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.navbar a span:hover {
+  background-color: rgb(243, 243, 243);
+  color: #6d0f0f;
+}
+
+.dropdown {
+  display: none;
+}
+
+/* Main */
+.content {
+  position: static;
+}
+
+#beranda {
+  height: 100vh;
+  background-color: #eef;
+  display: flex;
+  margin-top: -20px;
+  padding: 50px;
+  justify-content: center;
+}
+
+.hero {
+  flex-basis: 45%;
+  padding: 10px;
+}
+
+.hero img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.tagline {
+  flex-basis: 65%;
+  text-align: center;
+  padding: 50px 70px 20px;
+  margin-bottom: 100px;
+  font-size: 3vw;
+}
+
+.btn-beli {
+  color: white;
+  text-decoration: none;
+  background-color: #6d0f0f;
+  padding: 10px 20px;
+  border-radius: 30px;
+  position: relative;
+  top: 30px;
+  font-size: 20px;
+}
+
+.btn-beli:hover {
+  background-color: #470909;
+}
+
+#seri {
+  margin: 50px 0 90px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.seri-row {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.seri-col {
+  background-color: rgb(245, 245, 245);
+  border: 3px solid #6d0f0f;
+  border-radius: 30px;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px;
+}
+
+.seri-col img {
+  width: 20vw;
+}
+
+.seri-col img:hover {
+  transform: scale(1.1);
+  transition: 0.6s ease-in all;
+}
+
+.seri-col p {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+#kolab {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 2em;
+  background-color: #eef;
+}
+
+.kolab-row {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
+.kolab-col {
+  color: white;
+  flex-basis: 25%;
+  min-height: 150px;
+  background-color: #6d0f0f;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.kolab-col img {
+  padding: 5px 5px 0;
+  object-fit: cover;
+  width: 100%;
+  min-height: 350px;
+  margin: 10px auto;
+  align-items: center;
+  filter: blur(1px) grayscale(100);
+}
+
+.kolab-col img:hover {
+  filter: blur(0px) grayscale(0);
+  transition: 0.8s ease-in;
+}
+
+.kolab-col p {
+  color: white;
+  width: 100%;
+  background-color: #440606;
+  font-size: 0.6em;
+  padding: 10px;
+  margin-top: -10px;
+  border-radius: 20px;
+}
+
+#tentang-kami {
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px #470909;
+  border-radius: 50px;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.tk-row {
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.sejarah {
+  flex-basis: 50%;
+  padding: 10px 30px 20px;
+  text-align: justify;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.gambar {
+  display: flex;
+  font-size: 0.6em;
+}
+
+.gambar img {
+  margin-left: 10px;
+  object-fit: cover;
+  width: 20vw;
+}
+
+aside {
+  width: 100%;
+  background-color: #ddd;
+  padding: 30px 0 10px;
+}
+
+.profile img {
+  width: 200px;
+  text-align: center;
+}
+
+.profile header {
+  text-align: center;
+}
+
+figcaption {
+  text-decoration: underline;
+  text-align: center;
+  font-style: italic;
+}
+
+.sosmed {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sosmed-icons {
+  flex-basis: 20%;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: #6d0f0f;
+  font-size: 1em;
+  font-weight: bold;
+}
+footer p {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+/* !Responsif */
+@media screen and (max-width: 1000px) {
+  /* Header */
+  .navbar {
+    height: 10vh;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .navbar img {
+    width: 60%;
+    margin: auto;
+  }
+  ul.menu li {
+    display: none;
+  }
+
+  .btn-drop {
+    align-items: center;
+    width: 15vw;
+    color: black;
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-drop:hover {
+    background-color: #ddd;
+  }
+  .btn-drop div {
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    margin: 2px 0;
+    border-radius: 10px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: auto 0;
+  }
+
+  .menu-drop {
+    display: none;
+    position: absolute;
+    left: -70px;
+    top: 50px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .menu-drop a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .menu-drop a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .menu-drop {
+    transition: 1s all;
+  }
+
+  .hide {
+    display: hide;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  /* Main */
+  #beranda {
+    margin-top: 10px;
+    flex-direction: column;
+    padding: 0;
+    height: 88vh;
+  }
+
+  .hero {
+    margin-top: 40px;
+  }
+  .tagline {
+    padding: 10px 30px;
+    font-size: 5vw;
+  }
+
+  #seri {
+    font-size: 1.5em;
+  }
+  .seri-row {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .seri-col img {
+    width: 100%;
+  }
+
+  #kolab {
+    margin-top: -50px;
+    font-size: 1.5em;
+    padding: 40px 0;
+  }
+  .kolab-row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .kolab-col {
+    margin: 10px auto;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .kolab-col img {
+    max-height: 100px;
+  }
+
+  .kolab-col p {
+    font-size: 1em;
+  }
+
+  #tentang-kami {
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+    box-shadow: 0 0 0 0;
+    border: 0;
+  }
+
+  .tk-row {
+    flex-direction: column;
+  }
+
+  .sejarah {
+    line-height: 23px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .gambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px;
+  }
+
+  .gambar img {
+    width: 25vh;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 0.7em;
+  }
+}
