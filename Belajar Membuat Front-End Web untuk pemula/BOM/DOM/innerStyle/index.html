@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Cube World!</title>
+    <style>
+      button {
+        width: 200px;
+        font-size: 15px;
+        margin: 8px;
+        padding: 3px;
+      }
+
+      main {
+        margin: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main" align="center">
+      <h2>Its Cube Time!</h2>
+      <img id="gambar" src="https://d17ivq9b7rppb3.cloudfront.net/original/commons/homepage-dicoding-challenge-illustration.png" alt="Its a rubiks cube!" width="300" height="215" />
+      <p id="caption"><b>Sudah siap untuk memecahkan teka-teki permainan tersebut?</b></p>
+      <div class="button-group"></div>
+      <div class="button"><button>Sejarah</button></div>
+      <div class="button"><button>Permainan</button></div>
+      <div class="button">
+        <button><i>Fun Fact</i></button>
+      </div>
+      <div class="button"><button disabled="disabled">Play (Coming Soon)</button></div>
+      <div class="button"><button>Exit</button></div>
+    </div>
+    <hr size="2" width="95%" color="black" />
+    <div id="links">
+      <p>Situs lainnya yang tidak kalah menarik:</p>
+      <ul>
+        <li><a href="http://www.dicoding.com" id="dicodingLink">Dicoding</a></li>
+        <li><a href="http://www.google.com" id="googleLink">Google</a></li>
+      </ul>
+    </div>
+    <script>
+      const links = document.getElementById("links");
+      // InnerText mengubah isi teks dari element yang diambil
+      const dicoding = document.getElementById("dicodingLink");
+      dicoding.innerText = "Belajar Programming di Dicoding";
+
+      const google = document.getElementById("googleLink");
+      google.innerText = "Mencari sesuatu di Google";
+
+      // Mengubah dengan innerHTML sehingga bisa memanipulasi menggunakan Tag
+      dicoding.innerHTML = "<i>Belajar Programming di Dicoding</i>";
+      google.innerHTML = "<i>Mencari sesuatu di Google<i/>";
+
+      const buttons = document.getElementsByClassName("button");
+      // Mengubah Style
+      for (let button of buttons) {
+        button.childNodes[0].style.borderRadius = "40px";
+      }
+    </script>
+  </body>
+</html>

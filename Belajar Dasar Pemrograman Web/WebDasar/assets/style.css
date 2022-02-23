@@ -5,6 +5,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+#seri::before,
+#kolab::before,
+#tentang-kami::before {
+  content: "";
+  margin-top: 10px;
+  display: block;
+}
 
 body {
   font-family: "Ubuntu", sans-serif;
