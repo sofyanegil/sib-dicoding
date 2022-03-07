@@ -1,0 +1,14 @@
+.app-bar {
+  padding: 16px;
+  width: 100%;
+  background-color: cornflowerblue;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.app-bar img {
+  width: 24px;
+}
