@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Styling Custom Element</title>
+  </head>
+  <body>
+    <image-figure src="https://i.imgur.com/iJq78XH.jpg" alt="Dicoding Logo" caption="Huruf g dalam logo Dicoding"> </image-figure>
+
+    <hr />
+    <figure>
+      <figcaption>
+        Kita tidak menetapkan Shadow DOM pada custom element ini sehingga styling pada custom element masih dapat terpengaruh oleh keadaan dari luar. Maksudnya, jika kita menetapkan styling lain dengan menargetkan figure sebagai selector,
+        kemungkinan element <'figure'> yang terdapat pada custom element akan ikut terpengaruhi walaupun kita sudah menetapkan styling secara eksplisit di dalam fungsi render. Lantas bagaimana agar custom element dapat terenkapsulasi dari
+        gangguan luar? Kita akan membahas ini lebih detail pada pembahasan Shadow DOM.
+      </figcaption>
+    </figure>
+    <script src="image-figure.js"></script>
+  </body>
+</html>
