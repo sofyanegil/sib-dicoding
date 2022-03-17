@@ -1,3 +1,5 @@
+import logo from "../../images/logo.png";
+
 class AppBar extends HTMLElement {
   constructor() {
     super();
@@ -15,6 +17,7 @@ class AppBar extends HTMLElement {
         :host {display: flex; width: 100%; background-color: #497285;color: white;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);justify-content: center;align-items: center;gap: 5px;}
         h2 {padding: 16px;}
       </style>
+      <img src="${logo}" alt="" />
       <h2>Club Finder</h2>`;
   }
 }
