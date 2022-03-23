@@ -11,7 +11,6 @@ function countUser(user) {
 let jonas = { name: 'Jonas' };
 countUser(jonas); // Menambahkan user "Jonas"
 jonas = null; // Data object "Jonas" dihapus
-console.log(visitsCountMap);
 // delay dibutuhkan untuk menunggu garbage collector bekerja
 setTimeout(function () {
   console.log(inspect(visitsCountMap, { showHidden: true }));
