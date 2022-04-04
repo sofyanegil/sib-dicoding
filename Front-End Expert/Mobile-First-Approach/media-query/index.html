@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Basic Media Query</title>
+    <!-- Mobile first, mendahulukan ukuran layar terlebih dahulu
+    <link href="small.css" rel="stylesheet" />
+    <link href="medium.css" rel="stylesheet" media="screen and (min-width: 480px)" />
+    <link href="large.css" rel="stylesheet" media="screen and (min-width: 768px)" /> -->
+    <style>
+      body {
+        background-color: orange;
+      }
+      /* minimal layar ukuran sedang */
+      @media screen and (min-width: 480px) {
+        h1 {
+          color: blue;
+        }
+      }
+      /* minimal layar ukuran besar */
+      @media screen and (min-width: 768px) {
+        h1 {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Coba ubah ukuran layar browsernya</h1>
+  </body>
+</html>
