@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024px" />
+    <title>Illogical Tab Order</title>
+    <style>
+      body {
+        padding: 32px;
+      }
+
+      button {
+        padding: 10px 16px;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+
+      button:active {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <button style="float: right">🦁️ Leo</button>
+        <button style="float: left">🦂️Scorpio</button>
+        <button style="float: left">🦄️ Unicorn</button>
+      </div>
+      <div class="row">
+        <button style="float: none">🐃️ Taurus</button>
+        <button style="float: left">🐏️ Capricon</button>
+        <button style="float: right">🐟️ Pisces</button>
+      </div>
+    </div>
+  </body>
+</html>

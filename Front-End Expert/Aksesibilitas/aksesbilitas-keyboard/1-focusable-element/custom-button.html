@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Custom Button</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <button>[button] Tekan saya!</button>
+    <div class="button" tabindex="0">[div] Tekan saya!</div>
+    <p>Coba tekan tombol menggunakan kursor dan menggunakan fokus (gunakan tab key, kemudian space atau enter untuk menekan)</p>
+    <script>
+      const nativeButton = document.querySelector('button');
+      const customButton = document.querySelector('.button');
+      const content = document.querySelector('p');
+
+      const clickHandler = () => {
+        content.innerText = 'Berhasil menekan tombol!';
+        setTimeout(() => (content.innerText = 'Coba tekan tombol menggunakan kursor dan menggunakan fokus (gunakan tab key, kemudian space atau enter untuk menekan)'), 1000);
+      };
+
+      nativeButton.addEventListener('click', clickHandler);
+      customButton.addEventListener('click', clickHandler);
+    </script>
+  </body>
+</html>
