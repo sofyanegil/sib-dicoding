@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,500;1,700&display=swap');
+@import '__skip-link.scss';
+@import '__nav.scss';
+@import '__hero.scss';
+@import '__restaurant.scss';
+@import '__food.scss';
+@import '__footer.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #main__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}

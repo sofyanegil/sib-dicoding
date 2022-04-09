@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="List restaurant and Favorite food from Eatery" />
+    <title>Eatery</title>
+  </head>
+  <body>
+    <a href="#main__content" class="skip__link" tabindex="0">Skip to content</a>
+    <header>
+      <nav class="nav">
+        <div class="nav__container">
+          <a href="" class="nav__logo"> Eatery</a>
+          <a id="nav__menu" href="#" class="nav__button" aria-label="navigation-menu">☰</a>
+
+          <ul id="nav__drawer" class="nav__link">
+            <li class="nav__item"><a href="/"> Home</a></li>
+            <li class="nav__item"><a href="#">Favorite</a></li>
+            <li class="nav__item"><a href="https://linkedin.com/in/sofyanegi" target="_blank" rel="noopener noreferrer">About Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__title">Welcome to Eatery</h1>
+        <h2 class="hero__tagline">" We serve <span>good food</span> for make your <span>good mood</span> "</h2>
+        <a href="#main__content" class="hero__explore"
+          >Explore Now
+          <img src="/src/icons/cup.svg" alt="explore " />
+        </a>
+      </div>
+    </section>
+
+    <main id="main__content" tabindex="0">
+      <h3 class="main__title">Explore Restaurant</h3>
+      <section class="restaurant__list"></section>
+
+      <section class="food__container">
+        <h3 class="food__title">Our Favorite Menu</h3>
+        <div class="food__list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <img src="./src/images/logo.png" alt="logo" class="footer__logo" />
+        <div class="footer__copyright">
+          <p>
+            <span>copyright &copy; 2022 - Eatery</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

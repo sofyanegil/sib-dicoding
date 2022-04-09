@@ -1,0 +1,141 @@
+.main__title {
+  font-size: 30px;
+  font-weight: normal;
+  padding: 10px 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.restaurant__list {
+  display: grid;
+  gap: 30px;
+
+  .restaurant {
+    border-radius: 20px;
+    transition: 0.25s ease;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    &:hover {
+      transform: translate(-10px, -10px);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+    }
+
+    .restaurant__image {
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+      height: 33vh;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .restaurant__content {
+      padding: 20px;
+      margin-top: -40px;
+      background: rgba(255, 255, 255, 0.75);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 50px 50px 20px 20px;
+
+      .restaurant__name {
+        font-weight: bold;
+        border-bottom: 3px solid black;
+        padding: 10px 0;
+      }
+
+      .restaurant__info {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .restaurant__location,
+      .restaurant__rating {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .restaurant__description {
+        padding: 5px 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* number of lines to show */
+        line-clamp: 5;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 499px) {
+  #main__content {
+    margin-top: -100px;
+    padding-top: 100px;
+
+    .main__title {
+      font-size: 20px;
+    }
+
+    .restaurant__list {
+      grid-template-columns: 1fr;
+      margin: 0 20px;
+
+      .restaurant__name {
+        font-size: 16px;
+      }
+
+      .restaurant__location,
+      .restaurant__rating {
+        font-size: 13px;
+      }
+
+      .restaurant__description {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 700px) {
+  .restaurant__list {
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 30px;
+
+    .restaurant__name {
+      font-size: 18px;
+    }
+
+    .restaurant__location,
+    .restaurant__rating {
+      font-size: 14px;
+    }
+
+    .restaurant__description {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .restaurant__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    .restaurant__name {
+      font-size: 20px;
+    }
+
+    .restaurant__location,
+    .restaurant__rating {
+      font-size: 15px;
+    }
+
+    .restaurant__description {
+      font-size: 14px;
+    }
+  }
+}
